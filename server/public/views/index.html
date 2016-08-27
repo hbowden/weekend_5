@@ -7,13 +7,23 @@
     <link rel="stylesheet" href="/styles/style.css" />
     <!-- Angular -->
     <script type="text/javascript" src="/vendors/angular.min.js"></script>
-    <script type="text/javascript" src="/scripts/ang_app.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
 </head>
-<body ng-app="myApp">
+<body ng-app="app">
     <h1>Data APIs!</h1>
 
     <div class="container" ng-controller="petController">
       <div class="col-md-6">
+       <div class="dropdown open">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
         <button ng-click="getRandomPet()">Random Pet</button>
       </div>
       <div class="col-md-6">
